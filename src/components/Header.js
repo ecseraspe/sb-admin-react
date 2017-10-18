@@ -1,29 +1,47 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+
 
 import Sidebar from './menu/Sidebar';
 import HeadMenu from './menu/HeadMenu';
 
-const Header = () => {
-  return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-      <a className="navbar-brand" href="#">Start Bootstrap</a>
-      <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
+class Header extends Component {
+  constructor(props) {
+    super(props);
 
-      <div className="collapse navbar-collapse">
-        <Sidebar />
-        <ul className="navbar-nav sidenav-toggler">
-          <li className="nav-item">
-            <a className="nav-link text-center" id="sidenavToggler">
-              <i className="fa fa-fw fa-angle-left"></i>
-            </a>
-          </li>
-        </ul>
-        <HeadMenu />
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      isOpen: false
+    };
+  }
+
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
+
+  render() {
+    return (
+      <div>
+        <Navbar color="dark" dark expand="lg" fixed="top" id="mainNav">
+          <NavbarBrand href="/">Start Bootstrap</NavbarBrand>
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Sidebar />
+            <ul className="navbar-nav sidenav-toggler">
+              <li className="nav-item">
+                <a className="nav-link text-center" id="sidenavToggler">
+                  <i className="fa fa-fw fa-angle-left"></i>
+                </a>
+              </li>
+            </ul>
+            <HeadMenu />
+          </Collapse>
+        </Navbar>
       </div>
-    </nav>
-  )
+    )
+  }
 }
 
 export default Header;
