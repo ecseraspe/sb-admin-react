@@ -25,7 +25,7 @@ class Header extends Component {
     return (
       <div>
         <Navbar color="dark" dark expand="lg" fixed="top" id="mainNav">
-          <NavbarBrand href="/">Start Bootstrap</NavbarBrand>
+          <NavbarBrand href="/">Start Bootstrap React</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Sidebar />

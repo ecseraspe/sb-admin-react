@@ -4,6 +4,7 @@ import { Nav, NavItem } from 'reactstrap';
 import MessageNotification from './Header/MessageNotification';
 import AlertNotification from './Header/AlertNotification';
 import SearchForm from './Header/SearchForm';
+import LogoutButton from './Header/LogoutButton';
 
 class HeadMenu extends Component {
   
@@ -14,9 +15,7 @@ class HeadMenu extends Component {
         <AlertNotification />
         <SearchForm />
         <NavItem>
-          <a className="nav-link" data-toggle="modal" data-target="#exampleModal">
-             <i className="fa fa-fw fa-sign-out"></i>&nbsp;Logout
-          </a>
+          <LogoutButton />
         </NavItem>
       </Nav>
     );
