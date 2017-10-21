@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavItem, NavLink, Collapse } from 'reactstrap';
+import { NavItem, NavLink } from 'reactstrap';
 
 class NestedMenu extends Component {
   render() {
