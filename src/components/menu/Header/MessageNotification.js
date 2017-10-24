@@ -37,11 +37,13 @@ class MessageNotification extends Component {
               These messages clip off when they reach the end of the box so they don't overflow over to the sides!
             </div>
           </DropdownItem>
+          <DropdownItem divider />
           <DropdownItem>
             <strong>Jane Smith</strong>
             <span className="small float-right text-muted">11:21 AM</span>
             <div className="dropdown-message small">I was wondering if you could meet for an appointment at 3:00 instead of 4:00. Thanks!</div>
           </DropdownItem>
+          <DropdownItem divider />
           <DropdownItem>
             <strong>John Doe</strong>
             <span className="small float-right text-muted">11:21 AM</span>

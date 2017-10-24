@@ -40,6 +40,7 @@ class AlertNotification extends Component {
             <span className="small float-right text-muted">11:21 AM</span>
             <div className="dropdown-message small">This is an automated server response message. All systems are online.</div>
           </DropdownItem>
+          <DropdownItem divider />
           <DropdownItem>
             <span className="text-danger">
               <strong>
@@ -48,6 +49,7 @@ class AlertNotification extends Component {
             <span className="small float-right text-muted">11:21 AM</span>
             <div className="dropdown-message small">This is an automated server response message. All systems are online.</div>
           </DropdownItem>
+          <DropdownItem divider />
           <DropdownItem>
             <span className="text-success">
               <strong><i className="fa fa-long-arrow-up fa-fw"></i>Status Update</strong>

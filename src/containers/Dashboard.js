@@ -49,6 +49,10 @@ class Dashboard extends Component {
               footerText="Updated yesterday at 11:59 PM">
               <BarChart />
             </ContainerCard>
+            <div className="mb-0 mt-4">
+              <i className="fa fa-newspaper-o"></i> News Feed
+            </div>
+            <hr className="mt-2" />
             <SocialFeed />
           </div>
           <div className="col-lg-4">
