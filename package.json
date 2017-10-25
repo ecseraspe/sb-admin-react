@@ -5,6 +5,7 @@
   "dependencies": {
     "bootstrap": "^4.0.0-beta",
     "chart.js": "^2.7.0",
+    "fixed-data-table": "^0.6.4",
     "react": "^16.0.0",
     "react-chartjs-2": "^2.6.4",
     "react-dom": "^16.0.0",

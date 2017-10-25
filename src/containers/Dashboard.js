@@ -6,6 +6,7 @@ import AreaChart from '../components/charts/AreaChart';
 import BarChart from '../components/charts/BarChart';
 import PieChart from '../components/charts/PieChart';
 import SocialFeed from '../components/SocialFeed';
+import FeedExample from '../components/FeedExample';
 
 class Dashboard extends Component {
 
@@ -62,6 +63,7 @@ class Dashboard extends Component {
               footerText="Updated yesterday at 11:59 PM">
               <PieChart />
             </ContainerCard>
+            <FeedExample />
           </div>
         </div>
       </div>
