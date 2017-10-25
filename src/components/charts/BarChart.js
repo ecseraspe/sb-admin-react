@@ -50,7 +50,6 @@ export default class BarChart extends Component {
         <div className="col-sm-8">
           <Bar
             data={data}
-            width={100}
             options={options}
           />
         </div>

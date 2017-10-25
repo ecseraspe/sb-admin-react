@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ActivityWidget = ({ }) => {
+const ActivityWidget = () => {
   return (
     <div className="card-body py-2 small">
       <a className="mr-3 d-inline-block" href="#">

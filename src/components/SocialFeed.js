@@ -1,10 +1,8 @@
 import React from 'react';
 
 import FeedCard from './feeds/FeedCard';
-import FeedCard2 from './feeds/FeedCard2';
-import FeedCard3 from './feeds/FeedCard3';
 
-const SocialFeed = ({ }) => {
+const SocialFeed = () => {
   const comments = [
     { comment: 1}
   ];
