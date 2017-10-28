@@ -7,19 +7,23 @@ import BarChart from '../components/charts/BarChart';
 import PieChart from '../components/charts/PieChart';
 import SocialFeed from '../components/SocialFeed';
 import FeedExample from '../components/FeedExample';
+import DataTableExample from '../components/DataTableExample';
 
-import data from '../data/feeds';
+import Feeds from '../data/Feeds';
+import DataTable from '../data/DataTable';
 
 class Dashboard extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      feeds: data.Feeds,
+      feeds: Feeds,
+      dataTable: new DataTable(100).getAll(),
     };
   }
 
   render() {
-    if (!this.state.feeds) {
+    console.log(this.state.dataTable);
+    if (!this.state.feeds && !this.state.dataTable) {
       return null;
     }
     return (
@@ -85,6 +89,18 @@ class Dashboard extends Component {
               <PieChart />
             </ContainerCard>
             <FeedExample />
+          </div>
+        </div>
+        <div className='row'>
+          <div className='col-md-12'>
+            <ContainerCard
+              size={3}
+              headerText='Data Table Example'
+              icon='table'
+              footerText='Updated yesterday at 11:59 PM'
+            >
+              <DataTableExample data={this.state.dataTable} />
+            </ContainerCard>
           </div>
         </div>
       </div>
