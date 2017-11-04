@@ -8,10 +8,10 @@ import RootRoutes from '../routes';
 class App extends Component {
   render() {
     return (
-      <div className="wrapper">
+      <div className='wrapper'>
         <Header />
-        <div className="content-wrapper">
-          <div className="container-fluid">
+        <div className='content-wrapper'>
+          <div className='container-fluid'>
             <PageBreadcrumb />
             <RootRoutes />
           </div>

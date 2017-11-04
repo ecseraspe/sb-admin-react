@@ -3,14 +3,14 @@ import { Switch, Route } from 'react-router-dom';
 
 import Dashboard from './containers/Dashboard';
 import Charts from './containers/Charts';
+import DataTablePage from './containers/DataTablePage';
 
-const RootRoutes = () => {
-  return (
-    <Switch>
-      <Route exact path="/" component={Dashboard} />
-      <Route path="/charts" component={Charts} />
-    </Switch>
-  )
-}
+const RootRoutes = () => (
+  <Switch>
+    <Route exact path='/' component={Dashboard} />
+    <Route path='/charts' component={Charts} />
+    <Route path='/datatable' component={DataTablePage} />
+  </Switch>
+);
 
 export default RootRoutes;

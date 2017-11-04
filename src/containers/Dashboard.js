@@ -22,7 +22,6 @@ class Dashboard extends Component {
   }
 
   render() {
-    console.log(this.state.dataTable);
     if (!this.state.feeds && !this.state.dataTable) {
       return null;
     }
